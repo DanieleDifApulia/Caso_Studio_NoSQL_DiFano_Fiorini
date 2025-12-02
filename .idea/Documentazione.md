@@ -41,6 +41,8 @@
 
 # Aereomobile:
 ---
+#### VIN
+    Identificativo alfanumerico di registrazione dell'aereomobile di 17 cifre - String (e.g. "1FDWE37S5WHB43777")
 #### Modello
     Identificativo alfanumerico univoco dell'aereomobile - String (e.g. "747")
 #### Produttore
@@ -50,16 +52,16 @@
 #### Capacità
     Identificativo numerico di capacità totale dell'aereomobile - int (e.g. "90")
 
-# Voli:
+# VoloProg:
 ---
 #### Tipo
     Tipo del volo, programmato o operativo - String
 #### NumVP
-    Identificativo numerico del volo programmato - int (e.g. "147")
-#### *PartenzaVP*
-    Aereoporto di partenza del volo programmato, referenza a IATA3
+    Identificativo alfanumerico del volo programmato - String (e.g. "AZ147")
+#### PartenzaVP
+    Aereoporto di partenza del volo programmato, referenza a Aereoporto - IATA3
 #### ArrivoVP
-    Aereoporto di arrivo del volo programmato, referenza a IATA3
+    Aereoporto di arrivo del volo programmato, referenza a Aereoporto - IATA3
 #### GiorniOperativi
     Descrizione dei giorni della settimana di operazione del volo programmato - String (e.g. "Lunedì - Giovedì")
 #### OrarioPartenzaVP
@@ -67,8 +69,71 @@
 #### OrarioArrivoVP
     Orario di arrivo del volo programmato - date (e.g. "17:00")
 #### DurataVP
+    Durata stimata del volo programmato - String (e.g. "3:30")
+
+# VoloOp
+---
+#### NumVO
+    Identificativo alfanumerico del volo operativo - String (e.g. "AZ147")
 #### DataVO
+    Data del volo operativo, unix timestamp - int (e.g. "1764670528)
 #### StatoVO
+    Stato del volo operativo - String (e.g. "Partito")
 #### GateVO
+    Gate assegnato al volo operativo, referenza a Gate - NumGate
 #### AereoVO
+    Aereomobile assegnato al volo operativo, referenza a Aereomobile - VIN
 #### PersonaleVO
+    Personale assegnato al volo operativo, referenza a Personale - ListaPersonale<>
+
+# Personale:
+---
+#### Matricola
+    Identificativo alfanumerico del membro del personale - String (e.g. "AD-4532")
+#### Nome
+    Nome del membro del personale - String (e.g. "John")
+#### Cognome
+    Cognome del membro del personale - String (e.g. "Pork")
+#### Ruolo
+    Ruolo del membro del personale - String (e.g. "Pilota")
+
+
+# Prenotazione:
+---
+#### NomePagante
+    Nome del Pagante della prenotazione
+#### CognomePagante
+    Cognome del Pagante della prenotazione
+#### IdPrenotazione
+    Id della Prenotzione
+#### StatoPren
+    Descrizione alfanumerica dello stato della prenotazione - String (e.g. "Cancellata")
+#### Classe
+    Descrizione alfanumerica classe prenotata dal cliente - String (e.g. "1a")
+
+# Biglietto:
+---
+
+
+# Passeggero:
+---
+#### Nome
+    Nome del passeggero - String (e.g. "Gaetano")
+#### Cognome
+    Cognome del passeggero - String (e.g. "Cascione")
+#### DataNascita
+    Data di nascita del passeggero - date (e.g. "06/02/2004")
+
+
+#### NumB
+    Numero del biglietto - int (e.g. "123948")
+#### IdPrenotazione
+###### *Vedi **Prenotazione - IdPrenotazione***
+#### PNR
+    Passenger Name Record, codice identificativo alfanumerico di 6 carattare - String (e.g. "P52DKC")
+#### VoloB
+    Identificativo volo del biglietto, referenza a VoloOp - NumVO
+
+
+
+
