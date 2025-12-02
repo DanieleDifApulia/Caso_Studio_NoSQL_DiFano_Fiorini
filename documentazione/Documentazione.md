@@ -62,7 +62,7 @@ VoloProg:
     Aeroporto di partenza del volo programmato, referenza a Aeroporto - IATA3
 #### ArrivoVP
     Aeroporto di arrivo del volo programmato, referenza a Aeroporto - IATA3
-#### GiorniOperativi
+#### GiorniOp
     Descrizione dei giorni della settimana di operazione del volo programmato - String (e.g. "Lunedì - Giovedì")
 #### OrarioPartenzaVP
     Orario di partenza del volo programmato - date (e.g. "13:00")
