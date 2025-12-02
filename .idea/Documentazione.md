@@ -1,19 +1,19 @@
-Aereoporto:
+Aeroporto:
 ---
-#### NomeAereoporto
-    Identificativo alfanumerico univoco dell'aereoporto - String (e.g. "John F. Kennedy International Airport")
+#### NomeAeroporto
+    Identificativo alfanumerico univoco dell'aeroporto - String (e.g. "John F. Kennedy International Airport")
 #### IATA3
     Identificativo alfanumerico a 3 lettere univoco per aereoporti - String (e.g. "JFK")
 #### FusoOrario
     Identificativo alfanumerico di zona oraria a 3/4 lettere, ignorato l'offset UTC - String (e.g. "EST")
 #### Coordinate
-    Dato composto da LAT e LONG che indica la posizione geografica dell'aereoporto - String (e.g. "40.6446° N, 73.7797° W")
+    Dato composto da LAT e LONG che indica la posizione geografica dell'aeroporto - String (e.g. "40.6446° N, 73.7797° W")
 #### LAT
     Coordinata alfanumerica geografica di latitudine - String (e.g. "40.6446° N")
 #### LONG
     Coordinata alfanumerica geografica di longitudine - String (e.g. "73.7797° W")
 #### ListaTerminal<>
-    Lista dei terminal compresi nell'aereoporto e i loro dati - list (e.g. "Terminal 1, imbarco, gate 1")
+    Lista dei terminal compresi nell'aeroporto e i loro dati - list (e.g. "Terminal 1, imbarco, gate 1")
 #### Terminal
     Identificativo numerico per infrastrutture di imbarco, sbarco, check-in e ritiro bagagli - int (e.g. "1")
 #### TipoTerminal
@@ -24,7 +24,7 @@ Gate:
 #### NumGate
     Identificativo numerico per infrastruttura di appoggio alle piste - int (e.g. "3") 
 #### ***Terminal***
-###### *Vedi **Aereoporto - Terminal***
+###### *Vedi **Aeroporto - Terminal***
 #### Stato
     Stato alfanumerico attuale di operazione del gate - String (e.g. "Disponibile")
 
@@ -39,7 +39,7 @@ Compagnia:
 #### Alleanza
     Identificativo alfanumerico univoco dell'alleanza di appartenenza della compagnia - String (e.g. "SkyTeam")
 
-Aereomobile:
+Aeromobile:
 ---
 #### VIN
     Identificativo alfanumerico di registrazione dell'aereomobile di 17 cifre - String (e.g. "1FDWE37S5WHB43777")
@@ -59,9 +59,9 @@ VoloProg:
 #### NumVP
     Identificativo alfanumerico del volo programmato - String (e.g. "AZ147")
 #### PartenzaVP
-    Aereoporto di partenza del volo programmato, referenza a Aereoporto - IATA3
+    Aeroporto di partenza del volo programmato, referenza a Aeroporto - IATA3
 #### ArrivoVP
-    Aereoporto di arrivo del volo programmato, referenza a Aereoporto - IATA3
+    Aeroporto di arrivo del volo programmato, referenza a Aeroporto - IATA3
 #### GiorniOperativi
     Descrizione dei giorni della settimana di operazione del volo programmato - String (e.g. "Lunedì - Giovedì")
 #### OrarioPartenzaVP
