@@ -1,0 +1,30 @@
+{
+  "IATA3":"",
+  "Name":"",
+  "FusoOrario": "",
+  "LAT": "",
+  "LONG": "",
+  "ListaTerminal" : [
+      {
+        "TipoTerminal": "",
+        "Terminal": "",
+        "ListaGate": [
+          {
+            "NumGate": "",
+            "Stato": ""
+          }
+        ]
+      },
+      {
+        "TipoTerminal": "",
+        "Terminal": "",
+        "ListaGate": [
+          {
+            "NumGate": "",
+            "Stato": ""
+          }
+        ]
+      }
+  ]
+}
+
