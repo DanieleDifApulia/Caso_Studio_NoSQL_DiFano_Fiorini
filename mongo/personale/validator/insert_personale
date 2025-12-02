@@ -1,0 +1,62 @@
+db.personale.insertMany([
+  {
+    "Matricola": "P001",
+    "Nome": "Luca",
+    "Cognome": "Rossi",
+    "Ruolo": "Pilota"
+  },
+  {
+    "Matricola": "P002",
+    "Nome": "Giulia",
+    "Cognome": "Bianchi",
+    "Ruolo": "Assistente di volo"
+  },
+  {
+    "Matricola": "P003",
+    "Nome": "Marco",
+    "Cognome": "Verdi",
+    "Ruolo": "Controllore di volo"
+  },
+  {
+    "Matricola": "P004",
+    "Nome": "Sara",
+    "Cognome": "Conti",
+    "Ruolo": "Tecnico manutenzione"
+  },
+  {
+    "Matricola": "P005",
+    "Nome": "Davide",
+    "Cognome": "Romano",
+    "Ruolo": "Addetto check-in"
+  },
+  {
+    "Matricola": "P006",
+    "Nome": "Chiara",
+    "Cognome": "Greco",
+    "Ruolo": "Responsabile sicurezza"
+  },
+  {
+    "Matricola": "P007",
+    "Nome": "Alessandro",
+    "Cognome": "De Luca",
+    "Ruolo": "Pilota"
+  },
+  {
+    "Matricola": "P008",
+    "Nome": "Francesca",
+    "Cognome": "Marini",
+    "Ruolo": "Assistente di volo"
+  },
+  {
+    "Matricola": "P009",
+    "Nome": "Paolo",
+    "Cognome": "Ferrari",
+    "Ruolo": "Addetto bagagli"
+  },
+  {
+    "Matricola": "P010",
+    "Nome": "Elena",
+    "Cognome": "Ricci",
+    "Ruolo": "Supervisore terminal"
+  }
+])

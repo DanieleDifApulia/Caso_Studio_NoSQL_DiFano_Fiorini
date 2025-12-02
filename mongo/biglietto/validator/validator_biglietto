@@ -1,0 +1,45 @@
+db.createCollection("biglietto", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      required: ["NumB", "IdPrenotazione", "VoloB", "passeggiero"],
+      properties: {
+        NumB: {
+          bsonType: "string",
+          description: "Numero biglietto univoco, deve essere una stringa"
+        },
+        IdPrenotazione: {
+          bsonType: "string",
+          description: "ID della prenotazione associata"
+        },
+        VoloB: {
+          bsonType: "string",
+          description: "Codice del volo associato al biglietto"
+        },
+        passeggiero: {
+          bsonType: "object",
+          required: ["nome", "cognome", "DataNascita", "PNR"],
+          properties: {
+            nome: {
+              bsonType: "string",
+              description: "Nome del passeggero"
+            },
+            cognome: {
+              bsonType: "string",
+              description: "Cognome del passeggero"
+            },
+            DataNascita: {
+              bsonType: "string",
+              pattern: "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+              description: "Data di nascita in formato YYYY-MM-DD"
+            },
+            PNR: {
+              bsonType: "string",
+              description: "Passenger Name Record, codice univoco della prenotazione"
+            }
+          }
+        }
+      }
+    }
+  }
+})

@@ -1,0 +1,31 @@
+db.createCollection("personale_bordo", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      required: ["Matricola", "Nome", "Cognome", "Ruolo", "VoloOP"],
+      properties: {
+        Matricola: {
+          bsonType: "string",
+          pattern: "^PB[0-9]{3}$",
+          description: "Matricola del personale di bordo, deve seguire il formato PB### (es. PB001)"
+        },
+        Nome: {
+          bsonType: "string",
+          description: "Nome del membro dell'equipaggio"
+        },
+        Cognome: {
+          bsonType: "string",
+          description: "Cognome del membro dell'equipaggio"
+        },
+        Ruolo: {
+          enum: ["Pilota", "Copilota", "Assistente di volo"],
+          description: "Ruolo del personale di bordo, deve essere uno dei valori ammessi"
+        },
+        VoloOP: {
+          bsonType: "string",
+          description: "Codice del volo operativo associato (es. AZ610, FR204)"
+        }
+      }
+    }
+  }
+})

@@ -1,0 +1,92 @@
+db.voloPr.insertMany([
+  {
+    "NumVP": "AZ610",
+    "PartenzaVp": "FCO",
+    "ArrivoVP": "JFK",
+    "GiorniOp": "Lun, Mer, Ven",
+    "OrarioPartenzaVP": "08:30",
+    "OrarioArrivoVP": "12:00",
+    "DurataVP": "8h30m"
+  },
+  {
+    "NumVP": "FR204",
+    "PartenzaVp": "MXP",
+    "ArrivoVP": "NAP",
+    "GiorniOp": "Mar, Gio, Sab",
+    "OrarioPartenzaVP": "09:15",
+    "OrarioArrivoVP": "10:45",
+    "DurataVP": "1h30m"
+  },
+  {
+    "NumVP": "KL789",
+    "PartenzaVp": "AMS",
+    "ArrivoVP": "FCO",
+    "GiorniOp": "Lun, Mar, Gio, Dom",
+    "OrarioPartenzaVP": "10:00",
+    "OrarioArrivoVP": "12:30",
+    "DurataVP": "2h30m"
+  },
+  {
+    "NumVP": "QR112",
+    "PartenzaVp": "DOH",
+    "ArrivoVP": "MXP",
+    "GiorniOp": "Mer, Ven, Dom",
+    "OrarioPartenzaVP": "11:45",
+    "OrarioArrivoVP": "16:30",
+    "DurataVP": "6h45m"
+  },
+  {
+    "NumVP": "BA320",
+    "PartenzaVp": "LHR",
+    "ArrivoVP": "FCO",
+    "GiorniOp": "Lun, Mar, Mer, Gio, Ven",
+    "OrarioPartenzaVP": "12:30",
+    "OrarioArrivoVP": "15:45",
+    "DurataVP": "3h15m"
+  },
+  {
+    "NumVP": "LH450",
+    "PartenzaVp": "FRA",
+    "ArrivoVP": "LAX",
+    "GiorniOp": "Mar, Gio, Sab",
+    "OrarioPartenzaVP": "13:15",
+    "OrarioArrivoVP": "16:45",
+    "DurataVP": "11h30m"
+  },
+  {
+    "NumVP": "SK220",
+    "PartenzaVp": "CPH",
+    "ArrivoVP": "FCO",
+    "GiorniOp": "Lun, Mer, Ven",
+    "OrarioPartenzaVP": "14:00",
+    "OrarioArrivoVP": "16:30",
+    "DurataVP": "2h30m"
+  },
+  {
+    "NumVP": "EK202",
+    "PartenzaVp": "DXB",
+    "ArrivoVP": "JFK",
+    "GiorniOp": "Lun, Gio, Sab",
+    "OrarioPartenzaVP": "15:45",
+    "OrarioArrivoVP": "22:00",
+    "DurataVP": "14h15m"
+  },
+  {
+    "NumVP": "SU300",
+    "PartenzaVp": "SVO",
+    "ArrivoVP": "CDG",
+    "GiorniOp": "Mar, Ven, Dom",
+    "OrarioPartenzaVP": "16:30",
+    "OrarioArrivoVP": "18:45",
+    "DurataVP": "2h15m"
+  },
+  {
+    "NumVP": "AA100",
+    "PartenzaVp": "JFK",
+    "ArrivoVP": "LHR",
+    "GiorniOp": "Lun, Mer, Ven, Dom",
+    "OrarioPartenzaVP": "18:00",
+    "OrarioArrivoVP": "06:00",
+    "DurataVP": "8h00m"
+  }
+])

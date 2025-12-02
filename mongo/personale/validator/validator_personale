@@ -1,0 +1,37 @@
+db.createCollection("personale", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      required: ["Matricola", "Nome", "Cognome", "Ruolo"],
+      properties: {
+        Matricola: {
+          bsonType: "string",
+          pattern: "^P[0-9]{3}$",
+          description: "Matricola del dipendente, deve seguire il formato P### (es. P001)"
+        },
+        Nome: {
+          bsonType: "string",
+          description: "Nome del personale"
+        },
+        Cognome: {
+          bsonType: "string",
+          description: "Cognome del personale"
+        },
+        Ruolo: {
+          enum: [
+            "Pilota",
+            "Copilota",
+            "Assistente di volo",
+            "Controllore di volo",
+            "Tecnico manutenzione",
+            "Addetto check-in",
+            "Responsabile sicurezza",
+            "Addetto bagagli",
+            "Supervisore terminal"
+          ],
+          description: "Ruolo del personale, deve essere uno dei valori ammessi"
+        }
+      }
+    }
+  }
+})

@@ -1,0 +1,62 @@
+db.compagnia.insertMany([
+  {
+    "IATA2": "AZ",
+    "Nome": "ITA Airways",
+    "Paese": "Italia",
+    "Alleanza": "SkyTeam"
+  },
+  {
+    "IATA2": "FR",
+    "Nome": "Ryanair",
+    "Paese": "Irlanda",
+    "Alleanza": "Nessuna"
+  },
+  {
+    "IATA2": "KL",
+    "Nome": "KLM Royal Dutch Airlines",
+    "Paese": "Paesi Bassi",
+    "Alleanza": "SkyTeam"
+  },
+  {
+    "IATA2": "QR",
+    "Nome": "Qatar Airways",
+    "Paese": "Qatar",
+    "Alleanza": "Oneworld"
+  },
+  {
+    "IATA2": "BA",
+    "Nome": "British Airways",
+    "Paese": "Regno Unito",
+    "Alleanza": "Oneworld"
+  },
+  {
+    "IATA2": "LH",
+    "Nome": "Lufthansa",
+    "Paese": "Germania",
+    "Alleanza": "Star Alliance"
+  },
+  {
+    "IATA2": "SK",
+    "Nome": "Scandinavian Airlines (SAS)",
+    "Paese": "Svezia/Norvegia/Danimarca",
+    "Alleanza": "Star Alliance"
+  },
+  {
+    "IATA2": "EK",
+    "Nome": "Emirates",
+    "Paese": "Emirati Arabi Uniti",
+    "Alleanza": "Nessuna"
+  },
+  {
+    "IATA2": "SU",
+    "Nome": "Aeroflot",
+    "Paese": "Russia",
+    "Alleanza": "SkyTeam"
+  },
+  {
+    "IATA2": "AA",
+    "Nome": "American Airlines",
+    "Paese": "Stati Uniti",
+    "Alleanza": "Oneworld"
+  }
+])

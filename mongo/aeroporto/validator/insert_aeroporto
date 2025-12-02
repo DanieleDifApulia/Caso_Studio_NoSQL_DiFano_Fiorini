@@ -1,0 +1,77 @@
+db.aeroporto.insertMany([
+  {
+    "IATA3": "FCO",
+    "Name": "Roma Fiumicino",
+    "FusoOrario": "Europe/Rome",
+    "LAT": "41.8003",
+    "LONG": "12.2389",
+    "ListaTerminal": [
+      {
+        "TipoTerminal": "Passeggeri",
+        "Terminal": "T1",
+        "ListaGate": [
+          { "NumGate": "A01", "Stato": "Aperto" },
+          { "NumGate": "A02", "Stato": "Chiuso" }
+        ]
+      },
+      {
+        "TipoTerminal": "Internazionale",
+        "Terminal": "T3",
+        "ListaGate": [
+          { "NumGate": "E11", "Stato": "Aperto" },
+          { "NumGate": "E12", "Stato": "Aperto" }
+        ]
+      }
+    ]
+  },
+  {
+    "IATA3": "MXP",
+    "Name": "Milano Malpensa",
+    "FusoOrario": "Europe/Rome",
+    "LAT": "45.6301",
+    "LONG": "8.7231",
+    "ListaTerminal": [
+      {
+        "TipoTerminal": "Passeggeri",
+        "Terminal": "T1",
+        "ListaGate": [
+          { "NumGate": "B01", "Stato": "Aperto" },
+          { "NumGate": "B02", "Stato": "Aperto" }
+        ]
+      },
+      {
+        "TipoTerminal": "Cargo",
+        "Terminal": "T2",
+        "ListaGate": [
+          { "NumGate": "C10", "Stato": "Chiuso" },
+          { "NumGate": "C11", "Stato": "Aperto" }
+        ]
+      }
+    ]
+  },
+  {
+    "IATA3": "JFK",
+    "Name": "New York John F. Kennedy",
+    "FusoOrario": "America/New_York",
+    "LAT": "40.6413",
+    "LONG": "-73.7781",
+    "ListaTerminal": [
+      {
+        "TipoTerminal": "Internazionale",
+        "Terminal": "T4",
+        "ListaGate": [
+          { "NumGate": "D01", "Stato": "Aperto" },
+          { "NumGate": "D02", "Stato": "Chiuso" }
+        ]
+      },
+      {
+        "TipoTerminal": "Domestico",
+        "Terminal": "T8",
+        "ListaGate": [
+          { "NumGate": "F05", "Stato": "Aperto" },
+          { "NumGate": "F06", "Stato": "Aperto" }
+        ]
+      }
+    ]
+  }
+])

@@ -1,0 +1,30 @@
+db.createCollection("prenotazione", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      required: ["NomePagante", "CognomePagante", "idPrenotazione", "StatoPren", "Classe"],
+      properties: {
+        NomePagante: {
+          bsonType: "string",
+          description: "Deve essere una stringa e non può essere vuoto"
+        },
+        CognomePagante: {
+          bsonType: "string",
+          description: "Deve essere una stringa e non può essere vuoto"
+        },
+        idPrenotazione: {
+          bsonType: "string",
+          description: "Identificativo univoco della prenotazione"
+        },
+        StatoPren: {
+          enum: ["Confermato", "In attesa", "Cancellato"],
+          description: "Stato della prenotazione: solo valori ammessi"
+        },
+        Classe: {
+          enum: ["Economy", "Business", "First"],
+          description: "Classe di viaggio: solo valori ammessi"
+        }
+      }
+    }
+  }
+})

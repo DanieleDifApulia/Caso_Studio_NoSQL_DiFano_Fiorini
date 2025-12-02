@@ -1,0 +1,112 @@
+db.biglietto.insertMany([
+  {
+    "NumB": "B001",
+    "IdPrenotazione": "PR12345",
+    "VoloB": "AZ610",
+    "passeggiero": {
+      "nome": "Luca",
+      "cognome": "Rossi",
+      "DataNascita": "1985-03-12",
+      "PNR": "PNR001"
+    }
+  },
+  {
+    "NumB": "B002",
+    "IdPrenotazione": "PR12346",
+    "VoloB": "FR204",
+    "passeggiero": {
+      "nome": "Giulia",
+      "cognome": "Bianchi",
+      "DataNascita": "1990-07-25",
+      "PNR": "PNR002"
+    }
+  },
+  {
+    "NumB": "B003",
+    "IdPrenotazione": "PR12347",
+    "VoloB": "KL789",
+    "passeggiero": {
+      "nome": "Marco",
+      "cognome": "Verdi",
+      "DataNascita": "1978-11-02",
+      "PNR": "PNR003"
+    }
+  },
+  {
+    "NumB": "B004",
+    "IdPrenotazione": "PR12348",
+    "VoloB": "QR112",
+    "passeggiero": {
+      "nome": "Sara",
+      "cognome": "Conti",
+      "DataNascita": "1995-01-18",
+      "PNR": "PNR004"
+    }
+  },
+  {
+    "NumB": "B005",
+    "IdPrenotazione": "PR12349",
+    "VoloB": "BA320",
+    "passeggiero": {
+      "nome": "Davide",
+      "cognome": "Romano",
+      "DataNascita": "1982-09-09",
+      "PNR": "PNR005"
+    }
+  },
+  {
+    "NumB": "B006",
+    "IdPrenotazione": "PR12350",
+    "VoloB": "LH450",
+    "passeggiero": {
+      "nome": "Chiara",
+      "cognome": "Greco",
+      "DataNascita": "1988-05-30",
+      "PNR": "PNR006"
+    }
+  },
+  {
+    "NumB": "B007",
+    "IdPrenotazione": "PR12351",
+    "VoloB": "SK220",
+    "passeggiero": {
+      "nome": "Alessandro",
+      "cognome": "De Luca",
+      "DataNascita": "1975-12-14",
+      "PNR": "PNR007"
+    }
+  },
+  {
+    "NumB": "B008",
+    "IdPrenotazione": "PR12352",
+    "VoloB": "EK202",
+    "passeggiero": {
+      "nome": "Francesca",
+      "cognome": "Marini",
+      "DataNascita": "1993-04-05",
+      "PNR": "PNR008"
+    }
+  },
+  {
+    "NumB": "B009",
+    "IdPrenotazione": "PR12353",
+    "VoloB": "SU300",
+    "passeggiero": {
+      "nome": "Paolo",
+      "cognome": "Ferrari",
+      "DataNascita": "1980-10-21",
+      "PNR": "PNR009"
+    }
+  },
+  {
+    "NumB": "B010",
+    "IdPrenotazione": "PR12354",
+    "VoloB": "AA100",
+    "passeggiero": {
+      "nome": "Elena",
+      "cognome": "Ricci",
+      "DataNascita": "1987-06-11",
+      "PNR": "PNR010"
+    }
+  }
+])

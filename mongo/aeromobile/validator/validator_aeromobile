@@ -1,0 +1,32 @@
+db.createCollection("aeromobile", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      required: ["VIN", "Modello", "Produttore", "AnnoProduzione", "IATA2"],
+      properties: {
+        VIN: {
+          bsonType: "string",
+          description: "Identificativo univoco del velivolo, deve essere una stringa"
+        },
+        Modello: {
+          bsonType: "string",
+          description: "Modello dell'aereo, deve essere una stringa"
+        },
+        Produttore: {
+          enum: ["Airbus", "Boeing", "Embraer", "Bombardier", "ATR", "Sukhoi"],
+          description: "Produttore valido dell'aereo"
+        },
+        AnnoProduzione: {
+          bsonType: "string",
+          pattern: "^[0-9]{4}$",
+          description: "Anno di produzione in formato YYYY"
+        },
+        IATA2: {
+          bsonType: "string",
+          pattern: "^[A-Z]{2}$",
+          description: "Codice IATA a 2 lettere della compagnia"
+        }
+      }
+    }
+  }
+})

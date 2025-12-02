@@ -1,0 +1,52 @@
+db.createCollection("voloPr", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      required: [
+        "NumVP",
+        "PartenzaVp",
+        "ArrivoVP",
+        "GiorniOp",
+        "OrarioPartenzaVP",
+        "OrarioArrivoVP",
+        "DurataVP"
+      ],
+      properties: {
+        NumVP: {
+          bsonType: "string",
+          pattern: "^[A-Z0-9]{2}[0-9]{2,4}$",
+          description: "Codice volo programmato (es. AZ610, FR204)"
+        },
+        PartenzaVp: {
+          bsonType: "string",
+          pattern: "^[A-Z]{3}$",
+          description: "Codice IATA3 aeroporto di partenza (es. FCO, MXP)"
+        },
+        ArrivoVP: {
+          bsonType: "string",
+          pattern: "^[A-Z]{3}$",
+          description: "Codice IATA3 aeroporto di arrivo (es. JFK, LHR)"
+        },
+        GiorniOp: {
+          bsonType: "string",
+          description: "Giorni operativi del volo (es. Lun, Mer, Ven)"
+        },
+        OrarioPartenzaVP: {
+          bsonType: "string",
+          pattern: "^[0-9]{2}:[0-9]{2}$",
+          description: "Orario di partenza in formato HH:mm"
+        },
+        OrarioArrivoVP: {
+          bsonType: "string",
+          pattern: "^[0-9]{2}:[0-9]{2}$",
+          description: "Orario di arrivo in formato HH:mm"
+        },
+        DurataVP: {
+          bsonType: "string",
+          pattern: "^[0-9]+h[0-9]{2}m$",
+          description: "Durata del volo in formato XhYYm (es. 8h30m)"
+        }
+      }
+    }
+  }
+})

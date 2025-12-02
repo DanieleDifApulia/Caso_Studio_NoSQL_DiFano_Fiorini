@@ -1,0 +1,70 @@
+db.createCollection("aeroporto", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      required: ["IATA3", "Name", "FusoOrario", "LAT", "LONG", "ListaTerminal"],
+      properties: {
+        IATA3: {
+          bsonType: "string",
+          pattern: "^[A-Z]{3}$",
+          description: "Codice IATA a 3 lettere dell'aeroporto"
+        },
+        Name: {
+          bsonType: "string",
+          description: "Nome completo dell'aeroporto"
+        },
+        FusoOrario: {
+          bsonType: "string",
+          description: "Fuso orario in formato standard (es. Europe/Rome, America/New_York)"
+        },
+        LAT: {
+          bsonType: "string",
+          pattern: "^-?[0-9]+(\\.[0-9]+)?$",
+          description: "Latitudine come stringa numerica"
+        },
+        LONG: {
+          bsonType: "string",
+          pattern: "^-?[0-9]+(\\.[0-9]+)?$",
+          description: "Longitudine come stringa numerica"
+        },
+        ListaTerminal: {
+          bsonType: "array",
+          minItems: 1,
+          items: {
+            bsonType: "object",
+            required: ["TipoTerminal", "Terminal", "ListaGate"],
+            properties: {
+              TipoTerminal: {
+                bsonType: "string",
+                description: "Tipo di terminal (Passeggeri, Internazionale, Cargo, Domestico)"
+              },
+              Terminal: {
+                bsonType: "string",
+                pattern: "^T[0-9]+$",
+                description: "Numero terminal preceduto da T (es. T1, T3)"
+              },
+              ListaGate: {
+                bsonType: "array",
+                minItems: 1,
+                items: {
+                  bsonType: "object",
+                  required: ["NumGate", "Stato"],
+                  properties: {
+                    NumGate: {
+                      bsonType: "string",
+                      description: "Identificativo del gate (es. A01, B02)"
+                    },
+                    Stato: {
+                      enum: ["Aperto", "Chiuso"],
+                      description: "Stato del gate: solo Aperto o Chiuso"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+})

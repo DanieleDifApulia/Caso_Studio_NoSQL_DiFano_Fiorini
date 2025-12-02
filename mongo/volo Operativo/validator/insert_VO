@@ -1,0 +1,62 @@
+db.voloOp.insertMany([
+  {
+    "NumVO": "AZ610",
+    "DataVO": "2025-12-15T08:30:00",
+    "GateVO": "A01",
+    "AereoVO": "A320-ITA-001"
+  },
+  {
+    "NumVO": "FR204",
+    "DataVO": "2025-12-15T09:15:00",
+    "GateVO": "B02",
+    "AereoVO": "B737-RYR-002"
+  },
+  {
+    "NumVO": "KL789",
+    "DataVO": "2025-12-15T10:00:00",
+    "GateVO": "C11",
+    "AereoVO": "E190-KLM-003"
+  },
+  {
+    "NumVO": "QR112",
+    "DataVO": "2025-12-15T11:45:00",
+    "GateVO": "E12",
+    "AereoVO": "A350-QTR-004"
+  },
+  {
+    "NumVO": "BA320",
+    "DataVO": "2025-12-15T12:30:00",
+    "GateVO": "J01",
+    "AereoVO": "B787-BAW-005"
+  },
+  {
+    "NumVO": "LH450",
+    "DataVO": "2025-12-15T13:15:00",
+    "GateVO": "K02",
+    "AereoVO": "CRJ9-LH-006"
+  },
+  {
+    "NumVO": "SK220",
+    "DataVO": "2025-12-15T14:00:00",
+    "GateVO": "M01",
+    "AereoVO": "A220-SAS-007"
+  },
+  {
+    "NumVO": "EK202",
+    "DataVO": "2025-12-15T15:45:00",
+    "GateVO": "N02",
+    "AereoVO": "B777-EMI-008"
+  },
+  {
+    "NumVO": "SU300",
+    "DataVO": "2025-12-15T16:30:00",
+    "GateVO": "O01",
+    "AereoVO": "SU95-AFL-010"
+  },
+  {
+    "NumVO": "AA100",
+    "DataVO": "2025-12-15T18:00:00",
+    "GateVO": "R02",
+    "AereoVO": "ATR72-ITA-009"
+  }
+])

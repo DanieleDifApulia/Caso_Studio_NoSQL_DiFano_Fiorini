@@ -1,0 +1,27 @@
+db.createCollection("compagnia", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      required: ["IATA2", "Nome", "Paese", "Alleanza"],
+      properties: {
+        IATA2: {
+          bsonType: "string",
+          pattern: "^[A-Z]{2}$",
+          description: "Codice IATA a 2 lettere della compagnia"
+        },
+        Nome: {
+          bsonType: "string",
+          description: "Nome completo della compagnia aerea"
+        },
+        Paese: {
+          bsonType: "string",
+          description: "Paese di origine della compagnia"
+        },
+        Alleanza: {
+          enum: ["SkyTeam", "Oneworld", "Star Alliance", "Nessuna"],
+          description: "Alleanza aerea a cui la compagnia appartiene"
+        }
+      }
+    }
+  }
+})

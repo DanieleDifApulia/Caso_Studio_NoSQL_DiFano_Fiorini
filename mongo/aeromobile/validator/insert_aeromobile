@@ -1,0 +1,12 @@
+db.aeromobile.insertMany([
+  { "VIN": "A320-ITA-001", "Modello": "A320neo", "Produttore": "Airbus", "AnnoProduzione": "2021", "IATA2": "AZ" },
+  { "VIN": "B737-RYR-002", "Modello": "737-800", "Produttore": "Boeing", "AnnoProduzione": "2018", "IATA2": "FR" },
+  { "VIN": "E190-KLM-003", "Modello": "Embraer 190", "Produttore": "Embraer", "AnnoProduzione": "2015", "IATA2": "KL" },
+  { "VIN": "A350-QTR-004", "Modello": "A350-900", "Produttore": "Airbus", "AnnoProduzione": "2020", "IATA2": "QR" },
+  { "VIN": "B787-BAW-005", "Modello": "787-9 Dreamliner", "Produttore": "Boeing", "AnnoProduzione": "2019", "IATA2": "BA" },
+  { "VIN": "CRJ9-LH-006", "Modello": "CRJ900", "Produttore": "Bombardier", "AnnoProduzione": "2014", "IATA2": "LH" },
+  { "VIN": "A220-SAS-007", "Modello": "A220-300", "Produttore": "Airbus", "AnnoProduzione": "2022", "IATA2": "SK" },
+  { "VIN": "B777-EMI-008", "Modello": "777-300ER", "Produttore": "Boeing", "AnnoProduzione": "2017", "IATA2": "EK" },
+  { "VIN": "ATR72-ITA-009", "Modello": "ATR 72-600", "Produttore": "ATR", "AnnoProduzione": "2016", "IATA2": "AZ" },
+  { "VIN": "SU95-AFL-010", "Modello": "Sukhoi Superjet 100", "Produttore": "Sukhoi", "AnnoProduzione": "2013", "IATA2": "SU" }
+])

@@ -1,0 +1,72 @@
+db.personale_bordo.insertMany([
+  {
+    "Matricola": "PB001",
+    "Nome": "Luca",
+    "Cognome": "Rossi",
+    "Ruolo": "Pilota",
+    "VoloOP": "AZ610"
+  },
+  {
+    "Matricola": "PB002",
+    "Nome": "Giulia",
+    "Cognome": "Bianchi",
+    "Ruolo": "Copilota",
+    "VoloOP": "FR204"
+  },
+  {
+    "Matricola": "PB003",
+    "Nome": "Marco",
+    "Cognome": "Verdi",
+    "Ruolo": "Assistente di volo",
+    "VoloOP": "KL789"
+  },
+  {
+    "Matricola": "PB004",
+    "Nome": "Sara",
+    "Cognome": "Conti",
+    "Ruolo": "Assistente di volo",
+    "VoloOP": "QR112"
+  },
+  {
+    "Matricola": "PB005",
+    "Nome": "Davide",
+    "Cognome": "Romano",
+    "Ruolo": "Pilota",
+    "VoloOP": "BA320"
+  },
+  {
+    "Matricola": "PB006",
+    "Nome": "Chiara",
+    "Cognome": "Greco",
+    "Ruolo": "Copilota",
+    "VoloOP": "LH450"
+  },
+  {
+    "Matricola": "PB007",
+    "Nome": "Alessandro",
+    "Cognome": "De Luca",
+    "Ruolo": "Assistente di volo",
+    "VoloOP": "SK220"
+  },
+  {
+    "Matricola": "PB008",
+    "Nome": "Francesca",
+    "Cognome": "Marini",
+    "Ruolo": "Assistente di volo",
+    "VoloOP": "EK202"
+  },
+  {
+    "Matricola": "PB009",
+    "Nome": "Paolo",
+    "Cognome": "Ferrari",
+    "Ruolo": "Pilota",
+    "VoloOP": "SU300"
+  },
+  {
+    "Matricola": "PB010",
+    "Nome": "Elena",
+    "Cognome": "Ricci",
+    "Ruolo": "Copilota",
+    "VoloOP": "AA100"
+  }
+])

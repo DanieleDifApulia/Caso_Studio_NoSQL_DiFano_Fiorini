@@ -1,0 +1,72 @@
+db.prenotazione.insertMany([
+  {
+    "NomePagante": "Luca",
+    "CognomePagante": "Rossi",
+    "idPrenotazione": "PR12345",
+    "StatoPren": "Confermato",
+    "Classe": "Economy"
+  },
+  {
+    "NomePagante": "Giulia",
+    "CognomePagante": "Bianchi",
+    "idPrenotazione": "PR12346",
+    "StatoPren": "Confermato",
+    "Classe": "Business"
+  },
+  {
+    "NomePagante": "Marco",
+    "CognomePagante": "Verdi",
+    "idPrenotazione": "PR12347",
+    "StatoPren": "In attesa",
+    "Classe": "Economy"
+  },
+  {
+    "NomePagante": "Sara",
+    "CognomePagante": "Conti",
+    "idPrenotazione": "PR12348",
+    "StatoPren": "Cancellato",
+    "Classe": "Economy"
+  },
+  {
+    "NomePagante": "Davide",
+    "CognomePagante": "Romano",
+    "idPrenotazione": "PR12349",
+    "StatoPren": "Confermato",
+    "Classe": "First"
+  },
+  {
+    "NomePagante": "Chiara",
+    "CognomePagante": "Greco",
+    "idPrenotazione": "PR12350",
+    "StatoPren": "Confermato",
+    "Classe": "Business"
+  },
+  {
+    "NomePagante": "Alessandro",
+    "CognomePagante": "De Luca",
+    "idPrenotazione": "PR12351",
+    "StatoPren": "In attesa",
+    "Classe": "Economy"
+  },
+  {
+    "NomePagante": "Francesca",
+    "CognomePagante": "Marini",
+    "idPrenotazione": "PR12352",
+    "StatoPren": "Confermato",
+    "Classe": "Economy"
+  },
+  {
+    "NomePagante": "Paolo",
+    "CognomePagante": "Ferrari",
+    "idPrenotazione": "PR12353",
+    "StatoPren": "Cancellato",
+    "Classe": "Business"
+  },
+  {
+    "NomePagante": "Elena",
+    "CognomePagante": "Ricci",
+    "idPrenotazione": "PR12354",
+    "StatoPren": "Confermato",
+    "Classe": "Economy"
+  }
+])
