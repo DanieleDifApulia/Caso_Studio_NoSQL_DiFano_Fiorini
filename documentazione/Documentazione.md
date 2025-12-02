@@ -83,8 +83,6 @@ VoloOp
     Gate assegnato al volo operativo, referenza a Gate - NumGate
 #### AereoVO
     Aereomobile assegnato al volo operativo, referenza a Aereomobile - VIN
-#### PersonaleVO
-    Personale assegnato al volo operativo, referenza a Personale - ListaPersonale<>
 
 Personale:
 ---
@@ -113,7 +111,7 @@ Prenotazione:
 
 Biglietto:
 ---
-    Passeggero:
+### Passeggero:
 
     Nome
         Nome del passeggero - String (e.g. "Gaetano")
@@ -121,14 +119,13 @@ Biglietto:
         Cognome del passeggero - String (e.g. "Cascione")
     DataNascita
         Data di nascita del passeggero - date (e.g. "06/02/2004")
-
+    PNR
+        Passenger Name Record, codice identificativo alfanumerico di 6 carattare - String (e.g. "P52DKC")
 
 #### NumB
     Numero del biglietto - int (e.g. "123948")
 #### IdPrenotazione
 ###### *Vedi **Prenotazione - IdPrenotazione***
-#### PNR
-    Passenger Name Record, codice identificativo alfanumerico di 6 carattare - String (e.g. "P52DKC")
 #### VoloB
     Identificativo volo del biglietto, referenza a VoloOp - NumVO
 
