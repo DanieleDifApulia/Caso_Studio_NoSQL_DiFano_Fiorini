@@ -1,4 +1,4 @@
-# Aereoporto:
+Aereoporto:
 ---
 #### NomeAereoporto
     Identificativo alfanumerico univoco dell'aereoporto - String (e.g. "John F. Kennedy International Airport")
@@ -19,7 +19,7 @@
 #### TipoTerminal
     Tipologia in uso del terminal - String (e.g. "imbarco")
 
-# Gate:
+Gate:
 ---
 #### NumGate
     Identificativo numerico per infrastruttura di appoggio alle piste - int (e.g. "3") 
@@ -28,7 +28,7 @@
 #### Stato
     Stato alfanumerico attuale di operazione del gate - String (e.g. "Disponibile")
 
-# Compagnia:
+Compagnia:
 ---
 #### NomeCompagnia
     Identificativo alfanumerico univoco della compagnia - String (e.g. "RyanAir Ltd.")
@@ -39,7 +39,7 @@
 #### Alleanza
     Identificativo alfanumerico univoco dell'alleanza di appartenenza della compagnia - String (e.g. "SkyTeam")
 
-# Aereomobile:
+Aereomobile:
 ---
 #### VIN
     Identificativo alfanumerico di registrazione dell'aereomobile di 17 cifre - String (e.g. "1FDWE37S5WHB43777")
@@ -52,7 +52,7 @@
 #### Capacità
     Identificativo numerico di capacità totale dell'aereomobile - int (e.g. "90")
 
-# VoloProg:
+VoloProg:
 ---
 #### Tipo
     Tipo del volo, programmato o operativo - String
@@ -71,7 +71,7 @@
 #### DurataVP
     Durata stimata del volo programmato - String (e.g. "3:30")
 
-# VoloOp
+VoloOp
 ---
 #### NumVO
     Identificativo alfanumerico del volo operativo - String (e.g. "AZ147")
@@ -86,7 +86,7 @@
 #### PersonaleVO
     Personale assegnato al volo operativo, referenza a Personale - ListaPersonale<>
 
-# Personale:
+Personale:
 ---
 #### Matricola
     Identificativo alfanumerico del membro del personale - String (e.g. "AD-4532")
@@ -98,7 +98,7 @@
     Ruolo del membro del personale - String (e.g. "Pilota")
 
 
-# Prenotazione:
+Prenotazione:
 ---
 #### NomePagante
     Nome del Pagante della prenotazione
@@ -111,18 +111,16 @@
 #### Classe
     Descrizione alfanumerica classe prenotata dal cliente - String (e.g. "1a")
 
-# Biglietto:
+Biglietto:
 ---
+    Passeggero:
 
-
-# Passeggero:
----
-#### Nome
-    Nome del passeggero - String (e.g. "Gaetano")
-#### Cognome
-    Cognome del passeggero - String (e.g. "Cascione")
-#### DataNascita
-    Data di nascita del passeggero - date (e.g. "06/02/2004")
+    Nome
+        Nome del passeggero - String (e.g. "Gaetano")
+    Cognome
+        Cognome del passeggero - String (e.g. "Cascione")
+    DataNascita
+        Data di nascita del passeggero - date (e.g. "06/02/2004")
 
 
 #### NumB
