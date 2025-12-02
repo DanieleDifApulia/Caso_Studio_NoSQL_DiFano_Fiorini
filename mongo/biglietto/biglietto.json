@@ -1,0 +1,11 @@
+{
+  "NumB": "",
+  "IdPrenotazione": "",
+  "VoloB": "",
+  "passeggiero": {
+    "nome": "",
+    "cognome": "",
+    "DataNascita": "",
+    "PNR": ""
+  }
+}
